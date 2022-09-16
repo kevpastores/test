@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <title>Order</title>
+    <style>
+
+            body {
+                background-color: black;
+            }
+
+           .nav-link.active {
+        background-color: rgb(38,38,38) !important;
+        color:white !important;
+      }
+        td:hover, th:hover{
+            background-color: orange;
+        }
+
+        * {
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="act23.html"><img src="https://cdn-icons-png.flaticon.com/512/161/161588.png" style="width:30px" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="act23.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link active" href="Act21.html">Order</a></li>
+              <li class="nav-item"><a class="nav-link" href="Act22.html">Register</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control" type="search" placeholder="Search Item" />
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+           </div>
+        </div>
+    </nav>
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-lg-12 table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <h1 style="text-align:center">MENU</h1>
+                        <tr>
+                            <th>Icons</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                         </tr>
+                         <tr>
+                            <th colspan="3" style="background-color:Green; color:white">Meals</th>
+                         </tr>  
+                   </thead>
+                   <tbody>
+                        <tr>
+                            <td><img class="img-responsive" src="burger_icon.jpg" alt="burger" style="max-width:50px; max-height:50px"></td>
+                            <td>Burger</td>
+                            <td>55 PHP</td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-responsive" src="chicken_icon.jpg" alt="chicken" style="max-width:50px; max-height:50px"></td>
+                            <td>Fried Chicken</td>
+                            <td>80 PHP</td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-responsive" src="spaghetti_icon.png" alt="spaghetti" style="max-width:50px; max-height:50px"></td>
+                            <td>Spaghetti</td>
+                            <td>55 PHP</td> 
+                        </tr>
+                        <tr>
+                            <td><img class="img-responsive" src="pizza_icon.jpg" alt="pizza" style="max-width:50px; max-height:50px"></td>
+                            <td>Pizza</td>
+                            <td>150 PHP</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" style="background-color:Green; color:white;">Drinks</th>
+                        </tr>
+                        <tr>
+                            <td><img class="img-responsive" src="soda_icon.jpg" alt="coke" style="max-width:30px; max-height: 30px"></td>
+                            <td>Coke</td>
+                            <td>20 PHP</td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-responsive" src="soda_icon.jpg" alt="Sprite" style="max-width:30px;max-height:30px"></td>
+                            <td>Sprite</td>
+                            <td>20 PHP</td>
+                        </tr>
+                        <tr>
+                            <td><img class="img-responsive" src="soda_icon.jpg" alt="Sarsi" style="max-width:30px;max-height:30px"></td>
+                            <td>Sarsi</td>
+                            <td>20 PHP</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2" style="color:white; background-color:Green">All items are subject to tax. No refunds. All items are not transferrable.</td>
+                            <td>Extra Rice - 20 PHP</td>
+                        </tr>
+                        <tr>   
+                            <td>Condiments - 20 PHP</td>
+                        </tr>
+
+                   </tbody>
+                   </table>
+            </div>
+        </div>
+    </div>
+                   
+    
+</body>
+<footer>
+    <div class="container pb-3 pt-3">
+        <p class="text-center">michellinrestaurant@bootcamp.com | 09150291624</p>
+      </div>
+      <div class="container text-center pb-3 pt-3">
+        <a href="#">
+          <img class="img-fluid footer-logo"
+          src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-128.png"
+          alt="fb-logo" style="max-width:50px; max-height:50px">
+        </a>
+        <a href="#">
+          <img
+            class="img-fluid footer-logo"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png"
+            alt="twt-logo"
+            style="max-width: 50px; max-height: 50px"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="img-fluid footer-logo"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
+            alt="ig-logo"
+            style="max-width:50px; max-height:50px"
+          />
+        </a>
+        <a href="https://www.pinterest.ph/">
+          <img
+            class="img-fluid footer-logo"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Pinterest_colored_svg-128.png"
+            alt="pinterest-logo"
+            style="max-width:50px; max-height:50px"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="img-fluid footer-logo"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
+            alt="linkedin-logo"
+            style="max-width:50px; max-height:50px"
+          />
+        </a>
+        <a href="https://www.youtube.com/">
+          <img
+            class="img-fluid footer-logo"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-128.png"
+            alt="yt-logo"
+            style="max-width:50px; max-height:50px"
+          />
+        </a>
+      </div>
+</footer>
+</html>

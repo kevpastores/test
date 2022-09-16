@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Home</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .nav-link.active {
+        background-color: rgb(38, 38, 38) !important;
+        color: white !important;
+      }
+    
+    .accordion-item{
+    background-color: black;
+    color:white;
+}
+.accordion-button {
+    background-color: black;
+    color:white;
+}
+
+.carousel-inner > .carousel-item > img{
+     margin:auto; 
+     width:850px !important;
+     height:650px !important;
+     }
+
+/* .carousel-item {
+  width:100%;
+  height:auto;
+ 
+} */
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="act23.html"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+            style="width: 30px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Act21.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Act22.html">Register</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search Item"
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div
+          id="carousel-captions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3500"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-captions"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-captions"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-captions"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="burger1.jpg" class="d-block w-100" alt="burger" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Burger</h1>
+                <p>All time American Burger</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="hotdog1.jpg" class="d-block w-100" alt="hotdog" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Grilled Hotdog #2</h1>
+                <p>All time American Favorite</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="pasta1.jpg" class="d-block w-100" alt="pasta" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Pasta</h1>
+                <p>For the healthy option</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-captions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-captions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row">
+      <h3>Frequently Asked Questions</h3>
+      <div class="accordion" id="accordion-panel">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-one">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-one"
+              aria-expanded="true"
+              aria-controls="collapse-one"
+            >
+              Where are you located?
+            </button>
+          </h2>
+          <div
+            id="collapse-one"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-one"
+            data-bs-parent="#accordion-panel"
+          >
+            <div class="accordion-body">
+              <p>
+                We are located in Taguig, Pasig City, next to St. Joseph Funeral
+                Homes!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordion-panel">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-two">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-two"
+                aria-expanded="true"
+                aria-controls="collapse-two"
+              >
+                What time are you open?
+              </button>
+            </h2>
+            <div
+              id="collapse-two"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-two"
+              data-bs-parent="#accordion-panel"
+            >
+              <div class="accordion-body">
+                <p>
+                  We are all year round 24/7, except for weekends, holidays, and
+                  9:00PM - 9:00AM daily.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordion-panel">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-three">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-three"
+                aria-expanded="true"
+                aria-controls="collapse-three"
+              >
+                What food do you offer?
+              </button>
+            </h2>
+            <div
+              id="collapse-three"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-three"
+              data-bs-parent="#accordion-panel"
+            >
+              <div class="accordion-body">
+                <p>
+                  We offer classic American food, such as burgers, hotdogs,
+                  spaghetti, Chinese food, Adobo, and Curry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-3 pt-3">
+      <p class="text-center">michellinrestaurant@bootcamp.com | 09150291624</p>
+    </div>
+    <div class="container text-center pb-3 pt-3">
+      <a href="#">
+        <img class="img-fluid footer-logo"
+        src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-128.png"
+        alt="fb-logo" style="max-width:50px; max-height:50px">
+      </a>
+      <a href="#">
+        <img
+          class="img-fluid footer-logo"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png"
+          alt="twt-logo"
+          style="max-width: 50px; max-height: 50px"
+        />
+      </a>
+      <a href="#">
+        <img
+          class="img-fluid footer-logo"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
+          alt="ig-logo"
+          style="max-width:50px; max-height:50px"
+        />
+      </a>
+      <a href="https://www.pinterest.ph/">
+        <img
+          class="img-fluid footer-logo"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Pinterest_colored_svg-128.png"
+          alt="pinterest-logo"
+          style="max-width:50px; max-height:50px"
+        />
+      </a>
+      <a href="#">
+        <img
+          class="img-fluid footer-logo"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png"
+          alt="linkedin-logo"
+          style="max-width:50px; max-height:50px"
+        />
+      </a>
+      <a href="https://www.youtube.com/">
+        <img
+          class="img-fluid footer-logo"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-128.png"
+          alt="yt-logo"
+          style="max-width:50px; max-height:50px"
+        />
+      </a>
+    </div>
+  </body>
+</html>
